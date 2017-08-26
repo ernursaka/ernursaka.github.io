@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    margin-left: 40px;
+	font-size: 60px;
+}
+
+small{
+	font-family: verdana;
+    font-size: 20px;
+	color: red;
+	margin-left: 80px;
+}
+p {
+    font-family: verdana;
+    font-size: 20px;
+	color: white;
+	margin-left: 40px;
+}
