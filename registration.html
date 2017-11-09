@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+		<title>Ernur Saka</title>
+	</head>
+
+	<body>
+
+		<header class="primary-header container groupClearFix ">
+			<a href="index.html" class="logoL"> 
+				<h1 class="name"> ERNUR SAKA </h1>
+				<h2> PhD Candidate Computer Science</h2>
+				<h2> University of Louisville</h2>
+			</a>
+			<div class="speaker-info">
+			<img class="speaker-info" src="assets/images/home/IMG_1815.JPG" alt="Ernur Saka">
+			</div>
+		</header>
+	
+		<!-- Main Content -->
+		<section class="row">
+			<div class="grid" position = "relative">
+				<h3>Interactive Registration Tool</h3>
+				<p align="justify">In-situ hybridization images contain information about how genes control cell type identity, cell differentiation, 
+				and cell-cell signaling. In order to get this information, analyzing in-situ hybridization images via valuable quarries, 
+				comparisons and combining results with existing knowledge is necessary.
+				</p>
+				
+				<p align="justify">In-situ hybridization images needs to be organized into common coordinate 
+				system for correct analysis. Due to the high resolution and distortions contained within 
+				the images, this can be a challenging. In our work, we use three different image
+				registration methodologies to put a reference and in situ hybridization image into 
+				common coordinate system.</p>
+				
+				
+				<p align="justify">All registration methodologies we applied take a reference image and
+				transform it to have the same geometry as an in-situ hybridization image. The first
+				methodology is based on landmark image registration algorithms. It uses user defined
+				corresponding landmark pairs on both images to estimate transformation equation.
+				Estimation of the transformation equation is done by one of the six different algorithms.
+				They are affine, linear conformal, projective, polynomial, piecewise linear and local
+				weighted mean. Second methodology is improved version of the first one. Instead of
+				using user defined landmarks, it automatically finds corresponding landmark pairs. First
+				it detects corner points from both images via Harris-Stephens corner detector. Later, it
+				matches points that are maximally correlated with each other. The rest of the technique is
+				the same with the first one. The last technique is using mutual information to register two
+				images. Unlike the others, it is an area based registration technique. It works on whole
+				image intensity values to perform registration. It tries all the transformation equations in
+				search space and finds the one which maximizes the mutual information between two
+				images. Eventually, we put three methodologies together in one tool, visualize the results
+				in a user friendly way and save them for future work.</p>
+				<p> Ernur Saka, Eric Rouchka Poster Paper: Image Registration and Visualization Tool For In-Situ Gene Expression Images, IEEE ICCABS </p>
+				<p> For further information, please don't hesitate to contact me by e-mail ernur.saka@louisville.edu.</p>
+			</div>
+			
+			<div class="grid" position: relative;>
+				<video class="mySlides" src="assets/videos/Correlation.mp4" controls></video>
+				<video class="mySlides" src="assets/videos/ManualRegistration.mp4" controls></video>
+				<video class="mySlides" src="assets/videos/MutualInformation.mp4" controls></video>
+				<button  onclick="plusDivs(-1)">&#10094;</button>
+				<button  onclick="plusDivs(1)">&#10095;</button>
+			</div>
+		</section>
+		
+
+		
+		<footer class="primary-footer container groupClearFix" >
+			<small>&copy; Ernur Saka</small>
+		</footer>
+		
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	
+	</body>
+</html>

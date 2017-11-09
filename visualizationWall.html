@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+		<title>Ernur Saka</title>
+	</head>
+
+	<body>
+
+		<header class="primary-header container groupClearFix ">
+			<a href="index.html" class="logoL"> 
+				<h1 class="name"> ERNUR SAKA </h1>
+				<h2> PhD Candidate Computer Science</h2>
+				<h2> University of Louisville</h2>
+			</a>
+			<div class="speaker-info">
+			<img class="speaker-info" src="assets/images/home/IMG_1815.JPG" alt="Ernur Saka">
+			</div>
+		</header>
+	
+		<!-- Main Content -->
+		<section class="row">
+			<div class="grid" position = "relative">
+				<h3>Interactive Registration Tool</h3>
+				<p align="justify">Observing the details of a high resolution image by using small low resolution screens is
+						difficult for humans. To make it easy, we decided to use high performance computing (HPC)
+						Cluster and Visualization Wall.
+				</p>
+				
+				<p align="justify">In this project, our goal was to prepare a program for users to display their images by using
+				different number of screens and giving an opportunity to display more than one image to see
+				them together. To achieve these tasks, We implemented two programs with different technologies:.</p>
+				<p align="justify"> ErImageShow: Shows one or more images by using at most 15 screens.
+				Using python programming language, gThumb (gThumb, 2010) image viewer, and Xdmx </p>
+				<p align="justify"> DivShow: Shows one image by using all screens.
+				Using C programming language, OpenGL, Glut, libtiff (LibTIFF - TIFF Library and Utilities), and Chromium. </p>		
+				
+				<p> For further information, please don't hesitate to contact me by e-mail ernur.saka@louisville.edu.</p>
+			</div>
+			
+			
+			<div class="grid" position: relative;>
+				<img class="mySlides" src="assets/images/visualizationWall/DSC08022.JPG" style="width:100%">
+				<img class="mySlides" src="assets/images/visualizationWall/DSC08010.JPG" style="width:100%">
+				<video class="mySlides" src="assets/videos/ManualRegistration.mp4" controls></video>
+				<video class="mySlides" src="assets/videos/MutualInformation.mp4" controls></video>
+				<button  onclick="plusDivs(-1)">&#10094;</button>
+				<button  onclick="plusDivs(1)">&#10095;</button>
+			</div>
+		</section>
+		
+
+		
+		<footer class="primary-footer container groupClearFix" >
+			<small>&copy; Ernur Saka</small>
+		</footer>
+		
+		<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+			 x[i].style.display = "none";  
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		}
+		</script>
+	
+	</body>
+</html>
