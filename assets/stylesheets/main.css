@@ -149,11 +149,14 @@ inline-block elements*/
   ========================================
 */
 
-h3, p {
+h3 {
   margin-bottom: 20px;
   color: #648880;
 }
-
+p {
+  margin-bottom: 22px;
+  color: #648880;
+}
 h3 {
   color: #a9b2b9;
   font-size: 24px;
@@ -305,4 +308,6 @@ footer {
   margin: -20px -10px 10px 0;
   vertical-align: top;
 }
-
+.w3-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.w3-display-right{    float: right;
+    margin-left: -50%;}
