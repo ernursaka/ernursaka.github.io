@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+		<title>Ernur Saka</title>
+	</head>
+
+	<body>
+
+		<header class="primary-header container groupClearFix ">
+			<a href="index.html" class="logoL"> 
+				<h1 class="name"> ERNUR SAKA </h1>
+				<h2> PhD Candidate Computer Science</h2>
+				<h2> University of Louisville</h2>
+			</a>
+			<div class="speaker-info">
+			<img class="speaker-info" src="assets/images/home/IMG_1815.JPG" alt="Ernur Saka">
+			</div>
+		</header>
+	
+		<!-- Main Content -->
+		<section class="row">
+			<div class="grid" position = "relative">
+				<h3>Mapping Tool</h3>
+				<p align="justify">The focus of my research is using computer science to find clusters of substrings (or probes) that come from the 
+				same gene for focused bioinformatics research such as understanding genomic knowledge about Alzheimer. Before the package I prepared, 
+				the suggested clusters were only on the gene and transcript level, with my tool, mapping level is more granular, 
+				in terms of untranslated region (3'-UTR, 5'-UTR ) or Coding Region (CDF) or exon.
+				This opens the opportunity for new discoveries using old data and recent advancements in bioinformatics..</p>			
+				<p align="justify"> The tool can be reached from https://github.com/UofLBioinformatics/affyCustomCDF
+				</p>
+				<p align="justify"> The output files produced via affyCustomCdf tool for four organisms can be reached from http://bioinformatics.louisville.edu/RegionCDFDesc.html</p>				
+				<p> For further information, please don't hesitate to contact me by e-mail ernur.saka@louisville.edu.</p>
+			</div>
+			
+		</section>
+		
+
+		
+		<footer class="primary-footer container groupClearFix" >
+			<small>&copy; Ernur Saka</small>
+		</footer>
+		
+		<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+			 x[i].style.display = "none";  
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		}
+		</script>
+	
+	</body>
+</html>
