@@ -14,7 +14,7 @@
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1120px;
       margin: 0 auto;
       padding: 0 24px;
     }
@@ -34,23 +34,23 @@
     }
 
     .hero-text {
-      flex: 1 1 520px;
+      flex: 1 1 560px;
     }
 
     .hero-text h1 {
       margin: 0 0 12px 0;
-      font-size: 56px;
+      font-size: 54px;
       font-weight: 300;
       letter-spacing: 1px;
     }
 
     .hero-text p {
       margin: 8px 0;
-      font-size: 18px;
+      font-size: 19px;
     }
 
     .hero-image img {
-      width: 320px;
+      width: 300px;
       max-width: 100%;
       border-radius: 20px;
       display: block;
@@ -68,12 +68,12 @@
 
     .intro {
       font-size: 20px;
-      max-width: 950px;
+      max-width: 980px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
       gap: 24px;
     }
 
@@ -86,7 +86,7 @@
 
     .card h3 {
       margin-top: 0;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       font-size: 24px;
       color: #111827;
     }
@@ -100,22 +100,29 @@
       color: #4b5563;
     }
 
+    .links-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .links-list li {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     .footer {
       padding: 32px 0 48px 0;
       color: #6b7280;
       font-size: 15px;
-    }
-
-    a.resume-link {
-      display: inline-block;
-      margin-top: 12px;
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    a.resume-link:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -137,18 +144,23 @@
   <section class="section">
     <div class="container">
       <h2>About</h2>
-      <p class="intro">
-        I am a Data Scientist at Electronic Arts working on machine learning systems, recommendation engines,
-        personalization, experimentation, and Generative AI applications for live services.
-      </p>
-      <p class="intro">
-        My work focuses on building production-ready systems that improve player experience, support content creation workflows,
-        and deliver measurable business impact.
-      </p>
-      <p class="intro muted">
-        Note: Due to confidentiality, implementation details and source code for industry projects are not publicly available.
-        Descriptions here focus on high-level system design and impact.
-      </p>
+      <h2>About</h2>
+
+<p class="intro">
+  I am a Data Scientist at Electronic Arts building large-scale machine learning and AI systems for live services, including personalization, recommendation systems, gameplay modeling, and LLM-powered content generation.
+</p>
+
+<p class="intro">
+  My work has delivered multi-million dollar impact across multiple titles, including replacing external recommendation systems, enabling large-scale personalization, and deploying AI-assisted content generation used in production workflows.
+</p>
+
+<p class="intro">
+  I focus on building production-ready systems that go beyond model accuracy, emphasizing real-world behavior, usability, and measurable business outcomes across data science, product, and engineering teams.
+</p>
+
+<p class="intro muted">
+  Due to confidentiality, implementation details and source code for industry projects are not publicly available. Descriptions below focus on system design, modeling approach, and impact.
+</p>
     </div>
   </section>
 
@@ -156,54 +168,113 @@
     <div class="container">
       <h2>Selected Industry Projects</h2>
 
-  <div class="grid">
+      <div class="grid">
 
-  <div class="card">
-    <h3>Generative AI – Objective Creation</h3>
-    <p>
-      Built an LLM-based system that converts natural language into structured JSON for live-service objective creation.
-      Designed the workflow with schema validation and retrieval-based grounding to ensure reliable outputs.
-    </p>
-    <p><strong>Impact:</strong> Enabled ~82% of FC26 launch objectives and reduced content setup time by ~60%.</p>
-  </div>
+        <div class="card">
+          <h3>Generative AI – Objective Creation</h3>
+          <p>
+            Designed and delivered an LLM-based objective generation system that converts natural-language concepts
+            into structured JSON for live-service tooling. The workflow combined prompt orchestration, schema-based
+            validation, retrieval-based grounding, and producer-facing controls to make AI-assisted content creation usable in practice.
+          </p>
+          <p>
+            <strong>Impact:</strong> Enabled AI-assisted creation of ~82% of FC26 launch objectives (142 objectives) and reduced setup time by ~60%.
+          </p>
+        </div>
 
-  <div class="card">
-    <h3>Personalization Systems (Objectives, Ads, Store)</h3>
-    <p>
-      Developed personalization systems across objectives, store, and ads using segmentation, ranking logic, and experimentation.
-      Designed pipelines supporting scalable rollout across live services.
-    </p>
-    <p><strong>Impact:</strong> Delivered measurable conversion improvements and multi-million dollar revenue impact.</p>
-  </div>
+        <div class="card">
+          <h3>Personalization Systems – Objectives, Ads, and Store</h3>
+          <p>
+            Built and supported personalization systems across multiple FC live-service surfaces, including targeted objectives,
+            ads recommendation, and store experimentation. This work combined segmentation, ranking logic, A/B testing,
+            and rollout validation to make personalization scalable and safe to operate.
+          </p>
+          <p>
+            <strong>Impact:</strong> Supported systems with multi-million-dollar revenue contribution, including projected revenue impact for targeted objectives and measurable uplifts in live experimentation.
+          </p>
+        </div>
 
-  <div class="card">
-    <h3>Recommendation Systems (SimCity & Subscription)</h3>
-    <p>
-      Built and deployed recommendation systems across multiple titles, including a pack recommendation system for SimCity BuildIt
-      and a game recommendation system for a subscription platform.
-    </p>
-    <p><strong>Impact:</strong> Generated multi-million dollar revenue, replaced external solutions, and scaled to a large player base.</p>
-  </div>
+        <div class="card">
+          <h3>Recommendation Systems – SimCity BuildIt and Subscription Platform</h3>
+          <p>
+            Developed recommendation systems across multiple products, including a pack recommendation system for SimCity BuildIt
+            and a game recommendation system for a subscription platform. The work covered ranking design, feature engineering,
+            pipeline support, experiment analysis, and production deployment.
+          </p>
+          <p>
+            <strong>Impact:</strong> Replaced an outsourced recommendation solution, generated multi-million-dollar revenue, and scaled recommendations to a large share of the player base.
+          </p>
+        </div>
 
-  <div class="card">
-    <h3>Gameplay Modeling – xG System</h3>
-    <p>
-      Developed a next-generation xG model focused on spatial realism and goalkeeper–shooter interaction,
-      improving how shot quality is evaluated across gameplay scenarios.
-    </p>
-    <p><strong>Impact:</strong> Improved model behavior understanding and supported a shift from metric-based validation to behavior-based evaluation.</p>
-  </div>
+        <div class="card">
+          <h3>Gameplay Modeling – Expected Goals (xG)</h3>
+          <p>
+            Developed a next-generation xG model for EA Sports FC with a stronger focus on spatial realism, including goalkeeper–shooter interaction
+            and scenario-level behavioral analysis. Rather than treating model evaluation as only a metric comparison problem,
+            the work focused on understanding when models diverge, why they diverge, and which gameplay situations drive those differences.
+          </p>
+          <p>
+            <strong>Impact:</strong> Improved confidence in model behavior, highlighted weaknesses in legacy logic, and supported a shift from metric-based validation to behavior-based evaluation.
+          </p>
+        </div>
 
-  <div class="card">
-    <h3>Decision Support & ML Tools</h3>
-    <p>
-      Built internal tools for producers and gameplay engineers to explore model predictions, analyze scenarios,
-      and understand outputs through interactive interfaces.
-    </p>
-    <p><strong>Impact:</strong> Enabled non-technical stakeholders to inspect models, debug edge cases, and support gameplay decisions.</p>
-  </div>
+        <div class="card">
+          <h3>Decision Support & Internal ML Tools</h3>
+          <p>
+            Built internal tools to help producers and gameplay engineers inspect model outputs, investigate scenarios,
+            and better understand prediction behavior. This included stakeholder-facing analysis workflows and interactive tools
+            used to explore xG predictions, edge cases, and model explainability in a more practical way.
+          </p>
+          <p>
+            <strong>Impact:</strong> Made model behavior more accessible to non-DS stakeholders and improved collaboration between data science, producers, and engineering.
+          </p>
+        </div>
 
-</div>
+        <div class="card">
+          <h3>Additional Applied ML Work</h3>
+          <p>
+            Worked across a broader set of applied ML problems including churn prediction, retention analysis, NLP-based keyword extraction,
+            OCR/content moderation exploration, game economy simulation, player pricing, and advertising effectiveness modeling.
+          </p>
+          <p>
+            <strong>Impact:</strong> Expanded the use of predictive modeling and analysis across product, gameplay, and content workflows while supporting experimentation and decision-making in different game contexts.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Academic Projects</h2>
+      <div class="grid">
+
+        <div class="card">
+          <h3><a href="mappingTool.html" target="_blank">Mapping Tool</a></h3>
+          <p>
+            Research software and R package for creating custom CDF files for Affymetrix arrays,
+            developed as part of my PhD work in genomic data analysis.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3><a href="registration.html" target="_blank">Registration Tool</a></h3>
+          <p>
+            Interactive image registration and visualization work for in situ gene expression images,
+            based on my master's research.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3><a href="visualizationWall.html" target="_blank">Visualization Wall</a></h3>
+          <p>
+            Visualization of high-resolution images on a multi-screen wall using commodity clusters,
+            OpenGL, and distributed rendering tools.
+          </p>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -211,16 +282,19 @@
     <div class="container">
       <h2>Academic Background</h2>
       <p class="intro">
-        PhD in Computer Science and Engineering, University of Louisville.
-        My academic work included genomic data analysis, image registration,
-        and development of research software in R and C++.
+        I hold a PhD in Computer Science and Engineering from the University of Louisville.
+        My academic work focused on genomic data analysis, image registration, visualization,
+        and research software development in R, C++, Python, and related scientific computing tools.
+      </p>
+      <p class="intro">
+        My older project pages remain available through this website, and visitors still use them to access papers and research material.
       </p>
     </div>
   </section>
 
   <section class="footer">
     <div class="container">
-      <p>Website content updated to reflect current industry work and selected academic background.</p>
+      <p>Industry work shown at a high level. Academic project pages and related papers remain available through this site.</p>
     </div>
   </section>
 
