@@ -1,101 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
-		<title>Ernur Saka</title>
-	</head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ernur Saka</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fa;
+      color: #1f2937;
+      line-height: 1.6;
+    }
 
-	<body>
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-		<header class="primary-header container groupClearFix">
-			<a href="index.html" class="logoL"> 
-				<h1 class="name">ERNUR SAKA</h1>
-				<h2>Data Scientist | Machine Learning | Personalization | Generative AI</h2>
-				<h2>Electronic Arts</h2>
-			</a>
-			<div class="speaker-info">
-				<img class="speaker-info" src="assets/images/home/IMG_20160602_130518.jpg" alt="Ernur Saka">
-			</div>
-		</header>
+    .hero {
+      background: #111827;
+      color: white;
+      padding: 48px 0;
+    }
 
-		<section class="row">
-			<div class="grid">
-				<section class="teaser col-1-3">
-					<h3>Generative AI Objective Generation</h3>
-					<img src="assets/images/home/Figure 2-2.jpg" alt="Generative AI project">
-					<h4>LLM-powered structured content generation</h4>
-					<p>
-						Built an LLM-based system that converts natural language into structured JSON for live-service objective creation.
-						The system used schema validation and retrieval-based grounding to improve reliability and control.
-					</p>
-					<p>
-						Impact: Enabled ~82% of FC26 launch objectives (142 objectives) and reduced setup time by ~60%.
-					</p>
-				</section>
+    .hero-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
 
-				<section class="teaser col-1-3">
-					<h3>Recommendation & Personalization</h3>
-					<img src="assets/images/home/Registration.jpg" alt="Recommendation systems">
-					<h4>Player targeting and scalable personalization</h4>
-					<p>
-						Developed recommendation systems for targeted objectives, store personalization, and ads using segmentation,
-						experimentation, and ranking logic.
-					</p>
-					<p>
-						Impact: Supported systems with projected and measured multi-million dollar revenue impact across FC live services.
-					</p>
-				</section>
+    .hero-text {
+      flex: 1 1 520px;
+    }
 
-				<section class="teaser col-1-3">
-					<h3>Machine Learning Systems</h3>
-					<img src="assets/images/home/wallPicture.jpg" alt="Machine learning systems">
-					<h4>Prediction, modeling, and decision support</h4>
-					<p>
-						Built and deployed production ML systems including pack recommendation, churn prediction, xG modeling,
-						and gameplay-related analysis across multiple titles.
-					</p>
-					<p>
-						Impact: Replaced external solutions, improved player targeting, and generated multi-million dollar business value.
-					</p>
-				</section>
-			</div>	
-		</section>
+    .hero-text h1 {
+      margin: 0 0 12px 0;
+      font-size: 56px;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
 
-		<section class="row">
-			<div class="grid">
-				<section class="teaser" style="width:100%;">
-					<h3>About</h3>
-					<p>
-						I am a Data Scientist at Electronic Arts working on machine learning systems, recommendation engines,
-						personalization, experimentation, and Generative AI applications for live services.
-					</p>
-					<p>
-						My work focuses on building production-ready systems that improve player experience, support content creation workflows,
-						and deliver measurable business impact.
-					</p>
-					<p>
-						Note: Due to confidentiality, implementation details and source code for industry projects are not publicly available.
-						Descriptions here focus on high-level system design and impact.
-					</p>
-				</section>
-			</div>
-		</section>
+    .hero-text p {
+      margin: 8px 0;
+      font-size: 18px;
+    }
 
-		<section class="row">
-			<div class="grid">
-				<section class="teaser" style="width:100%;">
-					<h3>Academic Background</h3>
-					<p>
-						PhD in Computer Science and Engineering, University of Louisville.
-						My academic work included genomic data analysis, image registration, and development of research software in R and C++.
-					</p>
-				</section>
-			</div>
-		</section>
+    .hero-image img {
+      width: 320px;
+      max-width: 100%;
+      border-radius: 20px;
+      display: block;
+    }
 
-		<footer class="primary-footer container groupClearFix">
-		</footer>
+    .section {
+      padding: 48px 0;
+    }
 
-	</body>
+    .section h2 {
+      font-size: 34px;
+      margin: 0 0 24px 0;
+      color: #111827;
+    }
+
+    .intro {
+      font-size: 20px;
+      max-width: 950px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 24px;
+      color: #111827;
+    }
+
+    .card p {
+      margin: 10px 0;
+      font-size: 17px;
+    }
+
+    .muted {
+      color: #4b5563;
+    }
+
+    .footer {
+      padding: 32px 0 48px 0;
+      color: #6b7280;
+      font-size: 15px;
+    }
+
+    a.resume-link {
+      display: inline-block;
+      margin-top: 12px;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a.resume-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>ERNUR SAKA</h1>
+        <p>Data Scientist | Machine Learning | Personalization | Generative AI</p>
+        <p>Electronic Arts</p>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/home/IMG_20160602_130518.jpg" alt="Ernur Saka">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>About</h2>
+      <p class="intro">
+        I am a Data Scientist at Electronic Arts working on machine learning systems, recommendation engines,
+        personalization, experimentation, and Generative AI applications for live services.
+      </p>
+      <p class="intro">
+        My work focuses on building production-ready systems that improve player experience, support content creation workflows,
+        and deliver measurable business impact.
+      </p>
+      <p class="intro muted">
+        Note: Due to confidentiality, implementation details and source code for industry projects are not publicly available.
+        Descriptions here focus on high-level system design and impact.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Selected Industry Projects</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Generative AI Objective Generation</h3>
+          <p>
+            Built an LLM-based system that converts natural language into structured JSON for live-service objective creation.
+            Designed the workflow with schema validation and retrieval-based grounding for more reliable outputs.
+          </p>
+          <p><strong>Impact:</strong> Enabled ~82% of FC26 launch objectives (142 objectives) and reduced setup time by ~60%.</p>
+        </div>
+
+        <div class="card">
+          <h3>Recommendation & Personalization</h3>
+          <p>
+            Developed recommendation systems for targeted objectives, store personalization, and ads using segmentation,
+            experimentation, and ranking logic.
+          </p>
+          <p><strong>Impact:</strong> Supported systems with projected and measured multi-million dollar revenue impact across FC live services.</p>
+        </div>
+
+        <div class="card">
+          <h3>Machine Learning Systems</h3>
+          <p>
+            Built and deployed production ML systems including pack recommendation, churn prediction, xG modeling,
+            and gameplay-related analysis across multiple titles.
+          </p>
+          <p><strong>Impact:</strong> Replaced external solutions, improved player targeting, and generated multi-million dollar business value.</p>
+        </div>
+
+        <div class="card">
+          <h3>SimCity BuildIt Recommendation</h3>
+          <p>
+            Built and deployed a machine learning-based pack recommendation system that replaced an external vendor solution.
+            The system ranked large candidate sets using player behavior and game context.
+          </p>
+          <p><strong>Impact:</strong> Generated multi-million dollar revenue, achieved strong uplift, and scaled to a large share of the player base.</p>
+        </div>
+
+        <div class="card">
+          <h3>Ads & Store Experimentation</h3>
+          <p>
+            Worked on recommendation logic, experimentation design, and measurement for ads and store personalization systems,
+            including A/B testing and bandit-style approaches.
+          </p>
+          <p><strong>Impact:</strong> Contributed to measurable conversion and revenue improvements in live systems.</p>
+        </div>
+
+        <div class="card">
+          <h3>xG, Churn, and Modeling</h3>
+          <p>
+            Built and validated predictive models for gameplay and player behavior, including xG models, churn prediction,
+            and explainability analysis.
+          </p>
+          <p><strong>Impact:</strong> Improved confidence in model behavior and supported better product and gameplay decisions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Academic Background</h2>
+      <p class="intro">
+        PhD in Computer Science and Engineering, University of Louisville.
+        My academic work included genomic data analysis, image registration,
+        and development of research software in R and C++.
+      </p>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="container">
+      <p>Website content updated to reflect current industry work and selected academic background.</p>
+    </div>
+  </section>
+
+</body>
 </html>
