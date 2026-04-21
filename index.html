@@ -34,11 +34,11 @@
     }
 
     .hero-text {
-      flex: 1 1 580px;
+      flex: 1 1 600px;
     }
 
     .hero-text h1 {
-      margin: 0 0 12px 0;
+      margin: 0 0 10px 0;
       font-size: 54px;
       font-weight: 300;
       letter-spacing: 1px;
@@ -64,11 +64,6 @@
       font-size: 34px;
       margin: 0 0 24px 0;
       color: #111827;
-    }
-
-    .intro {
-      font-size: 19px;
-      max-width: 980px;
     }
 
     .grid {
@@ -120,27 +115,29 @@
 
   <section class="hero">
     <div class="container hero-inner">
-
       <div class="hero-text">
-<h1>ERNUR SAKA</h1>
-<p><strong>Senior Data Scientist — Personalization, Recommendation Systems, Generative AI</strong></p>
+        <h1>ERNUR SAKA</h1>
+        <p><strong>PhD, Computer Science</strong></p>
+        <p><strong>Senior Data Scientist — End-to-End ML Systems, Recommendation Systems, Generative AI</strong></p>
 
-<p>
-  I build production systems for live-service games, including personalization, recommendation,
-  gameplay modeling, and LLM-based content generation.
-</p>
+        <p>
+          I build end-to-end machine learning systems for live-service games, covering data collection, feature engineering,
+          modeling, deployment, experimentation, and product integration.
+        </p>
 
-<p>
-  My work includes replacing outsourced recommendation systems with in-house solutions,
-  enabling AI-assisted generation of most FC26 launch objectives, and building tools used by
-  producers and engineers to understand and act on model outputs.
-</p>
+        <p>
+          My work includes replacing outsourced recommendation systems with in-house solutions, shipping LLM-based tooling used in
+          production content workflows, and building tools that help producers and engineers understand and act on model outputs.
+        </p>
+
+        <p class="muted">
+          Experience includes recommendation systems, personalization, gameplay modeling, experimentation, and LLM-based content generation.
+        </p>
       </div>
 
       <div class="hero-image">
         <img src="assets/images/home/IMG_20160602_130518.jpg" alt="Ernur Saka">
       </div>
-
     </div>
   </section>
 
@@ -153,55 +150,69 @@
         <div class="card">
           <h3>Generative AI – Objective Creation</h3>
           <p>
-            Built an LLM-based system that converts natural language into structured JSON for live-service objective creation,
-            with validation and grounding to ensure outputs are usable by producers.
+            Designed and deployed an LLM-based system that converts natural-language objective concepts into structured JSON
+            for live-service tooling. Built validation, grounding, and producer-facing controls to make AI-generated outputs usable in practice.
           </p>
           <p>
-            <strong>Impact:</strong> Used to generate ~82% of FC26 launch objectives (142 objectives) and reduced setup time significantly.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Personalization Systems</h3>
-          <p>
-            Worked on personalization across objectives, store, and ads using segmentation, ranking logic, and experimentation,
-            with a focus on stability and real-world usage.
-          </p>
-          <p>
-            <strong>Impact:</strong> Supported targeted experiences and ongoing live-service experimentation.
+            <strong>Impact:</strong> Used to generate about 82% of FC26 launch objectives (142 objectives) and reduced setup effort from about 25 hours to about 10 hours.
           </p>
         </div>
 
         <div class="card">
-          <h3>Recommendation Systems</h3>
+          <h3>Personalization Systems – Objectives, Ads, and Store</h3>
           <p>
-            Built recommendation systems across products, including pack recommendation for SimCity BuildIt and game recommendation
-            for a subscription platform.
+            Built and supported personalization systems across targeted objectives, store surfaces, and ads using segmentation,
+            ranking logic, experimentation, and rollout validation.
           </p>
           <p>
-            <strong>Impact:</strong> Replaced an external vendor system and scaled recommendations to real player usage.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Gameplay Modeling – xG</h3>
-          <p>
-            Developed an xG model focused on spatial realism and goalkeeper interaction, with emphasis on understanding
-            how and why predictions differ across gameplay scenarios.
-          </p>
-          <p>
-            <strong>Impact:</strong> Enabled evaluation based on model behavior, not just aggregate metrics.
+            <strong>Impact:</strong> Supported production systems tied to an estimated $30M+ FC27 opportunity for targeted objectives,
+            about $10M for ads recommendation, and a measured +0.60% spend conversion uplift with about $2.5M incremental revenue in store experimentation.
           </p>
         </div>
 
         <div class="card">
-          <h3>ML Tools & Decision Support</h3>
+          <h3>Recommendation Systems – SimCity BuildIt and Subscription Platform</h3>
           <p>
-            Built internal tools, including a Streamlit-based xG application, to allow producers and engineers to explore predictions,
-            analyze scenarios, and investigate edge cases.
+            Developed recommendation systems across multiple products, including a pack recommendation system for SimCity BuildIt
+            and a game recommendation system for a subscription platform.
           </p>
           <p>
-            <strong>Impact:</strong> Made models accessible and usable in cross-team decision-making.
+            <strong>Impact:</strong> Replaced an outsourced recommendation solution, brought recommendation ownership in-house,
+            and delivered about $3.55M net revenue / $5.07M gross revenue over one reported period with about 11% uplift.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Gameplay Modeling – Expected Goals (xG)</h3>
+          <p>
+            Developed multiple xG models for EA Sports FC, including pre-shot and post-shot versions, with a stronger focus on
+            spatial realism, feature design, and goalkeeper interaction.
+          </p>
+          <p>
+            <strong>Impact:</strong> Improved xG prediction quality, supported deployment through ONNX generation, and helped shift evaluation
+            from aggregate metrics toward scenario-level model behavior and explainability.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Decision Support & Internal ML Tools</h3>
+          <p>
+            Built internal tools, including a Streamlit-based xG application, to allow producers and engineers to inspect predictions,
+            explore scenarios, investigate edge cases, and better understand model behavior.
+          </p>
+          <p>
+            <strong>Impact:</strong> Made model outputs directly usable in cross-functional decision-making instead of limiting analysis to offline DS workflows.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Additional Applied ML Work</h3>
+          <p>
+            Worked across a broader set of applied ML problems including churn prediction, retention analysis, player pricing,
+            NLP-based keyword extraction, OCR and content moderation exploration, advertising effectiveness modeling, and game economy simulation.
+          </p>
+          <p>
+            <strong>Impact:</strong> Extended predictive modeling and data-driven decision support into multiple gameplay, product, and content workflows.
           </p>
         </div>
 
@@ -209,7 +220,7 @@
     </div>
   </section>
 
-    <section class="section">
+  <section class="section">
     <div class="container">
       <h2>Academic Projects</h2>
 
